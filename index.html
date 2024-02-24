@@ -376,16 +376,29 @@ font-size:22px;
   position: relative;
       background-position: center;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size:cover;
     
 }
 
-.k-pay h3{ 
+
+.k-pay .btn-card{
  padding-top:100px;
+ padding-bottom:150px;
+ padding-left:35px;
+}
+
+.k-pay .btn-card button{
+ padding: 30px;
+ color:black;
+ background-color:white;
+}
+
+.k-pay h3{ 
+ padding-top:200px;
  color:white;
- padding-left:25px;
- padding-right:25px;
- font-size: 27px;
+ padding-left:35px;
+ padding-right:55px;
+ font-size: 24px;
  font-weight: 500;
  line-height: 1.5;
 }
@@ -412,6 +425,53 @@ font-size:22px;
 
 
 
+<style>
+
+.our-goal{
+padding:140px 35px 3 35px;
+text-align: center;
+}
+
+.our-goal h1{
+padding-bottom:40px;
+
+}
+
+
+.our-goal img{
+width:42%;
+}
+
+.goal-img{
+display:flex;
+gap: 15px;
+justify-content: center;
+align-items: center;
+padding-top:70px;
+padding-bottom:70px;
+}
+
+
+.hr-card hr{
+  width:50px;
+  height:6px;
+  border:none;
+  
+}
+
+.hr-card{
+display:flex;
+justify-content: center;
+align-items: center;
+padding:70px;
+}
+
+
+</style>
+
+
+
+
 <section class="our-goal">
 
   <h1>Our Goal</h1>
@@ -419,8 +479,10 @@ font-size:22px;
   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, placeat aperiam qui, voluptatum iste iure,
      atque praesentium architecto autem nostrum id sit expedita accusamus fugiat quia veniam? Dolore, at quam!</p>
 
-     <img src="" alt="">
-
+     <div class="goal-img">
+     <img src="assets/images/desktop/phone 01.png" width="100%">
+     <img src="assets/images/desktop/phone 03.png" width="100%">
+    </div>
      
   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, placeat aperiam qui, voluptatum iste iure,
     atque praesentium architecto autem nostrum id sit expedita accusamus fugiat quia veniam? Dolore, at quam!</p>
@@ -430,18 +492,34 @@ font-size:22px;
   atque praesentium architecto autem nostrum id sit expedita accusamus fugiat quia veniam? Dolore, at quam!</p>
 
   <div class="hr-card">
-    <hr>
-    <hr>
-    <hr>
-    <hr>
+    <hr style="background-color: green;">
+    <hr style="background-color: yellow;">
+    <hr style="background-color: blue;">
+    <hr style="background-color: rgb(236, 21, 122);">
+    
   </div>
 
 </section>
 
 
 
-<section class="About Us">
+<style>
+.about-us{
+  text-align: center;
+  padding:35px;
+}
 
+
+.about-us h1{
+ padding-bottom:40px;
+}
+</style>
+
+
+
+<section class="About-Us">
+
+  <h1>About Us</h1>
 
   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, placeat aperiam qui, voluptatum iste iure,
     atque praesentium architecto autem nostrum id sit expedita accusamus fugiat quia veniam? Dolore, at quam!</p>
@@ -458,12 +536,59 @@ font-size:22px;
 </section>
 
 
-<section class="second-comig">
+
+
+<style>
+
+.second-coming{
+  background-image: url("assets//images/mobile/joinwaitlist.png");
+  position: relative;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size:cover;
+      display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+    
+}
+
+.second-coming .coming-soon{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color:white;
+padding-top:300px;
+
+}
+
+
+.second-coming .btn-card{
+
+padding-bottom:150px;
+}
+
+.second-coming button{
+padding:30px;
+width: 350px;
+background-color: white;
+color:black;
+border-radius: 10px;
+border:none;
+}
+
+
+
+</style>
+
+<section class="second-coming">
 
   <div class="coming-soon">
 
     <h4>Coming Soon On</h4>
 
+    <div class="coming-mother">
 <div class="com-card">
   <i></i>
   <h3>Apple Store</h3>
@@ -475,7 +600,7 @@ font-size:22px;
 </div>
 
    </div>
-
+  </div>
    <div class="btn-card">
   <button>Join Waitlist</button>
    </div>
@@ -493,13 +618,13 @@ font-size:22px;
 <section id="faq">
   <h1>FREQUENTLY ASKED QUESTIONS</h1>
 
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+  <p class="f-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
      Adipisci facere sapiente autem quibusdam aut quisquam quidem dolore quos eum atque.</p>
   
   <div class="faq-mother">
   
     <div class="faq-card">
-  <div class="faq-header" > WHAT IS YOUR PREFERRED <br>  MODE OF COMMUNICATION DURING <br>  THE PLANNING PROCESS ?</div>
+  <div class="faq-header" > Is Brainkash a Betting Platform ?</div>
   
   <div class="faq-answer">
     <div class="faq-answer-content"> We create a whatsapp group chat for the scheduled weekly virtual meetings. It is best that information from either party 
@@ -511,7 +636,7 @@ font-size:22px;
 <hr>
 
     <div class="faq-card">
-      <div class="faq-header" > CAN I CONTACT YOU ANYTIME <br> TO DISCUSS ?</div>
+      <div class="faq-header" > What makes Brainkash unique ?</div>
       
       <div class="faq-answer">
         <div class="faq-answer-content" >No. You are allowed to choose your convenient meeting hours.
@@ -525,7 +650,7 @@ font-size:22px;
 <hr>
 
         <div class="faq-card">
-          <div class="faq-header" >WILLL THE CREATIVE DIRECTOR <br> ALWAYS BE THE  LEAD COORDINATOR <br>  ON THE DAY OF THE EVENT ?</div>
+          <div class="faq-header" > Is Brainkash free to use ?</div>
           
           <div class="faq-answer">
             <div class="faq-answer-content">No, The lead Coordinator present to supervise activities on the day of 
@@ -535,16 +660,162 @@ font-size:22px;
           </div>
             </div>
 
+
+            <div class="faq-card">
+              <div class="faq-header" > Is Brainkash a Betting Platform ?</div>
+              
+              <div class="faq-answer">
+                <div class="faq-answer-content"> We create a whatsapp group chat for the scheduled weekly virtual meetings. It is best that information from either party 
+                  is shared here so we dont miss out on any detail and we are able to cover everything in an organized manner.
+                   Details can be misinterpreted or forgotten with phone calls. Voice notes and emails are also options we encourage because they can always be referred to.</div>
+              </div>
+                </div>
+            
+            <hr>
+            
+                <div class="faq-card">
+                  <div class="faq-header" > What makes Brainkash unique ?</div>
+                  
+                  <div class="faq-answer">
+                    <div class="faq-answer-content" >No. You are allowed to choose your convenient meeting hours.
+                       it is dedicated to give matters related to your event undivided attention.
+                      For issues that need urgent attention outside meeting hours, you can drop a message
+                      on group chat room. It will be attended to as soon as we can within 24 business hours.
+                    </div>
+                  </div>
+                    </div>
+            
+            <hr>
+            
+                    <div class="faq-card">
+                      <div class="faq-header" > Is Brainkash free to use ?</div>
+                      
+                      <div class="faq-answer">
+                        <div class="faq-answer-content">No, The lead Coordinator present to supervise activities on the day of 
+                          the event does not necessarily
+                           have to be the Creative Director. We have professional and capable teams to supervise multiple events that we have.
+                        </div>
+                      </div>
+                        </div>
+
+                        
+                        <div class="faq-card">
+                          <div class="faq-header" > Is Brainkash a Betting Platform ?</div>
+                          
+                          <div class="faq-answer">
+                            <div class="faq-answer-content"> We create a whatsapp group chat for the scheduled weekly virtual meetings. It is best that information from either party 
+                              is shared here so we dont miss out on any detail and we are able to cover everything in an organized manner.
+                               Details can be misinterpreted or forgotten with phone calls. Voice notes and emails are also options we encourage because they can always be referred to.</div>
+                          </div>
+                            </div>
+                        
+                        <hr>
+                        
+                            <div class="faq-card">
+                              <div class="faq-header" > What makes Brainkash unique ?</div>
+                              
+                              <div class="faq-answer">
+                                <div class="faq-answer-content" >No. You are allowed to choose your convenient meeting hours.
+                                   it is dedicated to give matters related to your event undivided attention.
+                                  For issues that need urgent attention outside meeting hours, you can drop a message
+                                  on group chat room. It will be attended to as soon as we can within 24 business hours.
+                                </div>
+                              </div>
+                                </div>
+                        
+                        <hr>
+                        
+                                <div class="faq-card">
+                                  <div class="faq-header" > Is Brainkash free to use ?</div>
+                                  
+                                  <div class="faq-answer">
+                                    <div class="faq-answer-content">No, The lead Coordinator present to supervise activities on the day of 
+                                      the event does not necessarily
+                                       have to be the Creative Director. We have professional and capable teams to supervise multiple events that we have.
+                                    </div>
+                                  </div>
+                                    </div>
+
+                                    
+                                    <div class="faq-card">
+                                      <div class="faq-header" > Is Brainkash a Betting Platform ?</div>
+                                      
+                                      <div class="faq-answer">
+                                        <div class="faq-answer-content"> We create a whatsapp group chat for the scheduled weekly virtual meetings. It is best that information from either party 
+                                          is shared here so we dont miss out on any detail and we are able to cover everything in an organized manner.
+                                           Details can be misinterpreted or forgotten with phone calls. Voice notes and emails are also options we encourage because they can always be referred to.</div>
+                                      </div>
+                                        </div>
+                                    
+                                    <hr>
+                                    
+                                        <div class="faq-card">
+                                          <div class="faq-header" > What makes Brainkash unique ?</div>
+                                          
+                                          <div class="faq-answer">
+                                            <div class="faq-answer-content" >No. You are allowed to choose your convenient meeting hours.
+                                               it is dedicated to give matters related to your event undivided attention.
+                                              For issues that need urgent attention outside meeting hours, you can drop a message
+                                              on group chat room. It will be attended to as soon as we can within 24 business hours.
+                                            </div>
+                                          </div>
+                                            </div>
+                                    
+                                    <hr>
+                                    
+                                            <div class="faq-card">
+                                              <div class="faq-header" > Is Brainkash free to use ?</div>
+                                              
+                                              <div class="faq-answer">
+                                                <div class="faq-answer-content">No, The lead Coordinator present to supervise activities on the day of 
+                                                  the event does not necessarily
+                                                   have to be the Creative Director. We have professional and capable teams to supervise multiple events that we have.
+                                                </div>
+                                              </div>
+                                                </div>
+                                    
+
   
   </section>
 
+<style>
 
+footer{
+  background-color: rgb(14, 14, 17);
+  color: white;
+  padding: 20px;
+}
+
+.nav-menu{
+display:flex;
+gap:30px;
+padding-bottom:50px;
+}
+
+footer h1{
+  padding-bottom:40px;
+}
+
+.foot-social{
+  padding-bottom:80px;
+}
+
+footer img{
+  width:100px;
+}
+
+.f-logo-card{
+  padding-bottom:60px;
+  padding-top:60px;
+}
+
+</style>
 
  <footer>
 
-  <div class="logo-card">
+  <div class=" f-logo-card">
 
-    <img src="" alt="">
+    <img src="assets/images/desktop/bk big border (merged).png" width="100%">
   </div>
 
 <div class="nav-menu">
